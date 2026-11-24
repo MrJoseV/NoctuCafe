@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Coloso: Edición Halloween — NoctuCafé &amp; Brebajes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Creepster&family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- =========================================================
+       HEADER BLANCO HUESO: TAPA DE LA TAZA EMBRUJADA
+       ========================================================= -->
+  <header class="cup-lid" id="top">
+    <div class="lid-sip-vent" aria-hidden="true">
+      <span class="sip-hole"></span>
+      <span class="lid-caution">🎃 EDICIÓN NOCHE DE NÓCTULOS • BREBAJES DE TEMPORADA</span>
+    </div>
+
+    <div class="lid-inner">
+      <a href="#home" class="brand" aria-label="Café Coloso Halloween Inicio">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="34" height="34" fill="none">
+            <path d="M10 14h24l-3 22a4 4 0 0 1-4 3H17a4 4 0 0 1-4-3l-3-22Z" fill="#2A122F"/>
+            <path d="M8 10h28a2 2 0 0 1 2 2v2H6v-2a2 2 0 0 1 2-2Z" fill="#FF6B1A"/>
+            <circle cx="22" cy="25" r="5" fill="#FFB347"/>
+            <circle cx="20.5" cy="24.5" r="1.2" fill="#1A0B1C"/>
+            <circle cx="23.5" cy="24.5" r="1.2" fill="#1A0B1C"/>
+          </svg>
+        </span>
+        <span class="brand-text">CAFÉ <strong>COLOSO</strong> <small class="spooky-tag">BOO!</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="lid-nav" id="lidNav" aria-label="Navegación principal">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#productos" class="nav-link">Brebajes</a>
+        <a href="#merch-halloween" class="nav-link">Merch Halloween</a>
+        <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
+        <a href="#contacto" class="nav-link nav-cta">Contacto</a>
+      </nav>
+    </div>
+
+    <div class="lid-rim" aria-hidden="true"></div>
+  </header>
+
+  <!-- =========================================================
+       CUERPO DEL VASO: DEGRADADO CALABAZA A MORADO MEDIANOCHE
+       ========================================================= -->
+  <main class="cup-body">
+    <div class="foam-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path
+          d="M0,32 C180,82 360,0 540,40 C720,80 900,10 1080,45 C1260,80 1350,35 1440,32 L1440,0 L0,0 Z"
+          fill="#fff9f2"
+        />
+      </svg>
+    </div>
+
+    <!-- HERO HALLOWEEN + NÓCTULO -->
+    <section class="hero" id="home">
+      <div class="steam-container" aria-hidden="true">
+        <span class="steam s1"></span>
+        <span class="steam s2"></span>
+        <span class="steam s3"></span>
+      </div>
+
+      <div class="hero-content reveal">
+        <span class="pill-badge">🦇 Custodiado por Nóctulos • Brebajes de Calabaza</span>
+        <h1>
+          Taza gigante<br />
+          <span class="highlight">embrujada</span>
+        </h1>
+        <p class="hero-subtitle">
+          Cuando cae la noche en <strong>Café Coloso</strong>, los <strong>Nóctulos</strong> despiertan
+          para preparar brebajes de calabaza especiada y servir nuestro café estrella: el legendario
+          <strong>NoctuCafé</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#productos" class="btn-primary">Probar los brebajes ↓</a>
+          <button type="button" class="btn-secondary" id="sugarBtn">
+            🎃 Espolvorear nuez moscada (<span id="sugarCount">0</span>)
+          </button>
+        </div>
+      </div>
+
+      <!-- Ilustración de taza Halloween con un Nóctulo posado en la tapa -->
+      <div class="hero-illustration reveal" aria-hidden="true">
+        <div class="floating-cup">
+          <svg viewBox="0 0 260 300" width="260" height="300" fill="none">
+            <ellipse cx="130" cy="278" rx="76" ry="12" fill="rgba(26,11,28,0.28)" />
+            <!-- Vaso degradado calabaza a noche -->
+            <path d="M58 96 L202 96 L182 266 C180 274 172 278 164 278 L96 278 C88 278 80 274 78 266 Z" fill="url(#spookyCupGrad)" />
+            <!-- Manga morada -->
+            <path d="M66 148 L194 148 L187 216 L73 216 Z" fill="#1A0B1C" />
+            <circle cx="130" cy="182" r="24" fill="#FF6B1A" />
+            <!-- Carita calabaza en manga -->
+            <polygon points="120,178 125,172 128,179" fill="#1A0B1C"/>
+            <polygon points="132,179 135,172 140,178" fill="#1A0B1C"/>
+            <path d="M120 188 Q130 196 140 188" stroke="#1A0B1C" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Tapa blanca -->
+            <path d="M44 78 C44 70 50 64 58 64 L202 64 C210 64 216 70 216 78 L216 94 L44 94 Z" fill="#FFF9F2" stroke="#E5D3C3" stroke-width="3"/>
+            <!-- NÓCTULO (murciélago) volando sobre la tapa -->
+            <g transform="translate(68, 4)">
+              <!-- Alas de murciélago -->
+              <path d="M40 32 Q12 10 4 36 Q18 34 26 42 Q34 38 40 42 Z" fill="#2B1035"/>
+              <path d="M84 32 Q112 10 120 36 Q106 34 98 42 Q90 38 84 42 Z" fill="#2B1035"/>
+              <!-- Cuerpo y orejas de murciélago -->
+              <ellipse cx="62" cy="36" rx="18" ry="18" fill="#3B1D4A"/>
+              <polygon points="48,22 52,6 60,20" fill="#3B1D4A"/>
+              <polygon points="64,20 72,6 76,22" fill="#3B1D4A"/>
+              <!-- Ojos brillantes -->
+              <circle cx="55" cy="33" r="4.5" fill="#FFD166"/>
+              <circle cx="69" cy="33" r="4.5" fill="#FFD166"/>
+              <circle cx="55" cy="33" r="2" fill="#1A0B1C"/>
+              <circle cx="69" cy="33" r="2" fill="#1A0B1C"/>
+              <!-- Nariz de murciélago -->
+              <ellipse cx="62" cy="39" rx="3" ry="2" fill="#FF6B1A"/>
+            </g>
+            <defs>
+              <linearGradient id="spookyCupGrad" x1="130" y1="96" x2="130" y2="278" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FCE3C8"/>
+                <stop offset="45%" stop-color="#FF7B29"/>
+                <stop offset="100%" stop-color="#2B1035"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEPARADOR HALLOWEEN -->
+    <div class="cup-divider" aria-hidden="true">
+      <span>• BREBAJES DE CALABAZA •</span>
+      <span>• NOCTUCAFE ESTRELLA •</span>
+      <span>• NÓCTULOS VIGILANTES •</span>
+      <span>• EDICIÓN HALLOWEEN •</span>
+    </div>
+
+    <!-- =========================================================
+         BREBAJES Y CAFÉ ESTRELLA DE UN LADO A OTRO
+         ========================================================= -->
+    <section class="products-section" id="productos">
+      <div class="section-header reveal">
+        <span class="section-tag">El Menú Embrujado</span>
+        <h2>Brebajes de Calabaza &amp; NoctuCafé</h2>
+        <p>Desciende por el caldero gigante desde la espuma especiada hasta los sabores más oscuros de la noche.</p>
+      </div>
+
+      <div class="zigzag-list">
+        <!-- CAFÉ ESTRELLA: NOCTUCAFÉ -->
+        <article class="product-row star-product reveal">
+          <div class="product-visual">
+            <div class="visual-bg bg-noctu">
+              <svg viewBox="0 0 200 200" width="170" height="170" fill="none" aria-label="NoctuCafé Estrella">
+                <ellipse cx="100" cy="170" rx="58" ry="10" fill="rgba(0,0,0,0.3)"/>
+                <path d="M52 74 H148 L138 154 C136 164 128 168 118 168 H82 C72 168 64 164 62 154 Z" fill="#230E2E"/>
+                <path d="M145 88 C168 88 168 128 141 130" stroke="#230E2E" stroke-width="11" stroke-linecap="round"/>
+                <!-- Espuma estrellada y ojitos de nóctulo -->
+                <ellipse cx="100" cy="74" rx="46" ry="12" fill="#E9D8FD"/>
+                <circle cx="88" cy="74" r="5" fill="#FFD166"/>
+                <circle cx="112" cy="74" r="5" fill="#FFD166"/>
+                <circle cx="88" cy="74" r="2" fill="#1A0B1C"/>
+                <circle cx="112" cy="74" r="2" fill="#1A0B1C"/>
+                <!-- Estrellitas -->
+                <path d="M44 48 L48 56 L56 58 L49 63 L51 71 L44 66 L37 71 L39 63 L32 58 L40 56 Z" fill="#FFD166"/>
+                <circle cx="155" cy="48" r="4" fill="#FF6B1A"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info star-card">
+            <span class="layer-badge star-badge">⭐ CAFÉ ESTRELLA DE LA CASA</span>
+            <h3>NoctuCafé</h3>
+            <p>
+              Nuestra creación insignia inspirada en los Nóctulos del bosque. Doble espresso nocturno,
+              infusión de mora azul especiada, carbón activado comestible y espuma lunar dorada.
+            </p>
+            <ul class="tasting-notes">
+              <li>🦇 Firma oficial de los Nóctulos</li>
+              <li>✨ Notas: Mora, cacao y canela</li>
+              <li>⚡ Energía nocturna: 5/5</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- BREBAJE DE CALABAZA 1 -->
+        <article class="product-row reverse reveal">
+          <div class="product-visual">
+            <div class="visual-bg bg-pumpkin">
+              <svg viewBox="0 0 200 200" width="170" height="170" fill="none" aria-label="Poción de Calabaza">
+                <ellipse cx="100" cy="168" rx="56" ry="10" fill="rgba(42,18,10,0.2)"/>
+                <path d="M54 78 H146 L136 156 C134 163 126 166 118 166 H82 C74 166 66 163 64 156 Z" fill="#FF6B1A"/>
+                <!-- Crema batida -->
+                <path d="M62 78 C64 56 84 52 100 42 C116 52 136 56 138 78 Z" fill="#FFF8F0"/>
+                <!-- Carita Jack-o-lantern -->
+                <polygon points="82,110 88,100 94,110" fill="#1A0B1C"/>
+                <polygon points="106,110 112,100 118,110" fill="#1A0B1C"/>
+                <path d="M84 128 Q100 140 116 128" stroke="#1A0B1C" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="layer-badge">Brebaje 01 • Base de Calabaza</span>
+            <h3>Poción de Calabaza Especiada</h3>
+            <p>
+              Puré real de calabaza asada, mezcla secreta de jengibre, clavo y nuez moscada,
+              combinado con leche cremosa y un shot suave de espresso.
+            </p>
+            <ul class="tasting-notes">
+              <li>🎃 Base: Calabaza natural</li>
+              <li>🍂 Especias: Canela y clavo</li>
+              <li>🏷️ Solo exhibición embrujada</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- BREBAJE DE CALABAZA 2 -->
+        <article class="product-row reveal">
+          <div class="product-visual">
+            <div class="visual-bg bg-elixir">
+              <svg viewBox="0 0 200 200" width="170" height="170" fill="none" aria-label="Elixir Calabaza Lunar">
+                <ellipse cx="100" cy="170" rx="48" ry="9" fill="rgba(0,0,0,0.25)"/>
+                <path d="M64 58 H136 L128 162 H72 Z" fill="#D95F18" stroke="#FFF8F0" stroke-width="4"/>
+                <path d="M66 76 H134 L132 96 H68 Z" fill="#FFF8F0" opacity="0.85"/>
+                <rect x="78" y="108" width="20" height="20" rx="4" fill="rgba(255,255,255,0.5)" transform="rotate(-10 78 108)"/>
+                <path d="M114 30 L104 140" stroke="#7C3AED" stroke-width="7" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info dark-zone">
+            <span class="layer-badge">Brebaje 02 • Frío de Otoño</span>
+            <h3>Elixir Calabaza Lunar</h3>
+            <p>
+              Cold brew de 18 horas infusionado con caramelo de calabaza tostada y coronado
+              con crema fría de vainilla fantasmal.
+            </p>
+            <ul class="tasting-notes">
+              <li>🧊 Temperatura: Helado</li>
+              <li>🎃 Toque: Caramelo de calabaza</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- POSTRE HALLOWEEN -->
+        <article class="product-row reverse reveal">
+          <div class="product-visual">
+            <div class="visual-bg bg-web">
+              <svg viewBox="0 0 200 200" width="170" height="170" fill="none" aria-label="Croissant Telaraña y Calabaza">
+                <ellipse cx="100" cy="158" rx="64" ry="11" fill="rgba(0,0,0,0.25)"/>
+                <path d="M38 118 C48 80 80 68 100 68 C120 68 152 80 162 118 C156 136 140 140 128 130 C118 138 82 138 72 130 C60 140 44 136 38 118 Z" fill="#E07A22"/>
+                <path d="M72 88 Q100 105 128 88" stroke="#1A0B1C" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M84 74 Q100 92 116 74" stroke="#1A0B1C" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product-info dark-zone">
+            <span class="layer-badge">Brebaje &amp; Pan 03 • Horneado</span>
+            <h3>Croissant Telaraña &amp; Calabaza</h3>
+            <p>
+              Hojaldre dorado relleno de crema dulce de calabaza y decorado con hilos de chocolate amargo.
+            </p>
+            <ul class="tasting-notes">
+              <li>🕸️ Glaseado: Cacao 70%</li>
+              <li>🥐 Relleno: Crema de calabaza</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SECCIÓN DE MERCH DE HALLOWEEN (DESTINO DEL NOCTUPELUCHE)
+         ========================================================= -->
+    <section class="merch-section reveal" id="merch-halloween">
+      <div class="section-header">
+        <span class="section-tag">🛍️ Tiendita de Temporada</span>
+        <h2 class="merch-title">Merch Oficial de Halloween</h2>
+        <p>Llévate un pedacito de la noche de los Nóctulos. Oferta especial de temporada en barra.</p>
+      </div>
+
+      <div class="merch-grid">
+        <article class="merch-card featured-merch">
+          <span class="merch-ribbon">🔥 OFERTA -20%</span>
+          <div class="merch-thumb bg-noctu">
+            <svg viewBox="0 0 160 160" width="120" height="120" fill="none">
+              <!-- Alas del peluche murciélago -->
+              <path d="M44 82 Q16 54 10 88 Q26 84 34 96 Q42 90 48 94 Z" fill="#3B1D4A"/>
+              <path d="M116 82 Q144 54 150 88 Q134 84 126 96 Q118 90 112 94 Z" fill="#3B1D4A"/>
+              <!-- Cuerpo y orejas -->
+              <ellipse cx="80" cy="92" rx="34" ry="36" fill="#4C1D95"/>
+              <polygon points="54,64 60,36 72,60" fill="#4C1D95"/>
+              <polygon points="88,60 100,36 106,64" fill="#4C1D95"/>
+              <!-- Ojos bordados -->
+              <circle cx="67" cy="84" r="7.5" fill="#FFD166"/>
+              <circle cx="93" cy="84" r="7.5" fill="#FFD166"/>
+              <circle cx="67" cy="84" r="3.5" fill="#1A0B1C"/>
+              <circle cx="93" cy="84" r="3.5" fill="#1A0B1C"/>
+              <!-- Nariz y sonrisa de murciélago -->
+              <ellipse cx="80" cy="94" rx="4.5" ry="3" fill="#FF6B1A"/>
+              <path d="M72 103 Q80 109 88 103" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>NoctuPeluche Edición Halloween</h3>
+          <p>Peluche ultra suave de nuestro murciélago Nóctulo con alitas desplegadas y ojos dorados bordados (28 cm).</p>
+          <div class="merch-price">
+            <span class="old-price">$22.00</span>
+            <strong>$17.60</strong>
+          </div>
+          <button type="button" class="btn-merch" data-item="NoctuPeluche Edición Halloween">Reservar en barra 🦇</button>
+        </article>
+
+        <article class="merch-card">
+          <div class="merch-thumb bg-pumpkin">
+            <svg viewBox="0 0 160 160" width="120" height="120" fill="none">
+              <ellipse cx="80" cy="92" rx="44" ry="34" fill="#FF6B1A"/>
+              <rect x="74" y="46" width="12" height="16" rx="3" fill="#2D6A4F"/>
+              <circle cx="65" cy="88" r="4" fill="#1A0B1C"/>
+              <circle cx="95" cy="88" r="4" fill="#1A0B1C"/>
+              <path d="M70 100 Q80 108 90 100" stroke="#1A0B1C" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Peluche Calabaza Dormilona</h3>
+          <p>Cojín peluche con aroma sutil a canela y tallo de terciopelo.</p>
+          <div class="merch-price"><strong>$16.00</strong></div>
+          <button type="button" class="btn-merch" data-item="Peluche Calabaza Dormilona">Reservar en barra 🎃</button>
+        </article>
+
+        <article class="merch-card">
+          <div class="merch-thumb bg-elixir">
+            <svg viewBox="0 0 160 160" width="120" height="120" fill="none">
+              <path d="M44 64 H116 L108 118 C104 128 92 132 80 132 C68 132 56 128 52 118 Z" fill="#1A0B1C"/>
+              <ellipse cx="80" cy="64" rx="36" ry="8" fill="#7C3AED"/>
+              <circle cx="80" cy="96" r="10" fill="#FF6B1A"/>
+            </svg>
+          </div>
+          <h3>Taza Caldero Embrujado</h3>
+          <p>Cerámica negra mate de 400ml ideal para tus brebajes de calabaza.</p>
+          <div class="merch-price"><strong>$14.50</strong></div>
+          <button type="button" class="btn-merch" data-item="Taza Caldero Embrujado">Reservar en barra 🧪</button>
+        </article>
+      </div>
+      <p class="merch-toast" id="merchToast" role="status" aria-live="polite"></p>
+    </section>
+
+    <!-- ORÁCULO DE LOS NÓCTULOS -->
+    <section class="fun-fact-box reveal" aria-label="Sabiduría de los Nóctulos">
+      <div class="fun-fact-card">
+        <span class="fact-emoji">🦇</span>
+        <div>
+          <h4>Sabiduría de los Nóctulos</h4>
+          <p id="baristaQuote">
+            "Quien bebe NoctuCafé bajo la luna llena nunca vuelve a temerle a los lunes."
+          </p>
+        </div>
+        <button type="button" class="btn-quote" id="nextQuoteBtn">Otro presagio</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- OFERTA FLOTANTE EN LA ESQUINA DE ABAJO: NOCTUPELUCHE -->
+  <a href="#merch-halloween" class="noctu-corner-offer" aria-label="Oferta NoctuPeluche Halloween">
+    <span class="offer-owl">🦇</span>
+    <div>
+      <small>OFERTA HALLOWEEN -20%</small>
+      <strong>¡Llévate tu NoctuPeluche! →</strong>
+    </div>
+  </a>
+
+  <!-- FOOTER EN NEGRO -->
+  <footer class="cup-footer" id="contacto">
+    <div class="footer-top-rim" aria-hidden="true"></div>
+    <div class="footer-container">
+      <section class="footer-block" id="quienes-somos">
+        <span class="footer-tag">Nuestra Leyenda</span>
+        <h3>Quiénes Somos</h3>
+        <p>
+          <strong>Café Coloso (Edición Halloween)</strong> es el refugio nocturno donde los Nóctulos
+          hornean postres de calabaza y preparan el mítico NoctuCafé.
+        </p>
+      </section>
+
+      <section class="footer-block">
+        <span class="footer-tag">Guarida</span>
+        <h3>Contacto &amp; Horarios</h3>
+        <ul class="contact-list">
+          <li><strong>📍 Dirección:</strong> Callejón de la Calabaza #66, Barrio Aroma</li>
+          <li><strong>🦇 Horario Nocturno:</strong> 16:00 – 02:00 hrs</li>
+          <li><strong>✉️ Correo:</strong> noctulos@cafecoloso.ficticio</li>
+        </ul>
+      </section>
+
+      <section class="footer-block">
+        <span class="footer-tag">Pergamino Virtual</span>
+        <h3>Deja un mensaje</h3>
+        <form class="napkin-form" id="napkinForm">
+          <input type="text" id="visitorName" placeholder="Tu nombre" required />
+          <textarea id="visitorMsg" rows="2" placeholder="¿Qué brebaje te gustaría probar?" required></textarea>
+          <button type="submit" class="btn-footer">Enviar al caldero 🎃</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear"></span> Café Coloso — Edición Halloween con Nóctulos 🦇🎃</p>
+      <a href="#top" class="back-to-lid">↑ Volver a la tapa</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
